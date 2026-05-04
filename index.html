@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative Graphic Designer & Canva Expert - Logo Design, Banners, Posters, YouTube Thumbnails">
+    <meta name="keywords" content="Graphic Designer, Canva Expert, Logo Design, Social Media Design">
+    <title>Creative Designer - Graphic Design & Canva Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-pen-fancy"></i>
+                    <span>DesignStudio</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Creative Graphic Designer & Canva Expert</h1>
+                <p class="hero-subtitle">Transforming ideas into stunning visual designs that captivate and inspire</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        Hire Me
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">
+                        View My Work
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-decoration">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know the person behind the designs</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate graphic designer with 5+ years of experience in creating stunning visual content. I specialize in brand identity, social media design, and digital marketing materials.</p>
+                    <p>My expertise in Canva combined with professional design tools allows me to deliver high-quality designs that are both creative and functional. I believe in the power of great design to communicate messages effectively and create lasting impressions.</p>
+                    <div class="skills">
+                        <h3>Skills & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-cube"></i>
+                                <span>Canva Pro</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-image"></i>
+                                <span>Photoshop</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-pen-tool"></i>
+                                <span>Illustrator</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-brush"></i>
+                                <span>Branding</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-share-alt"></i>
+                                <span>Social Media</span>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-video"></i>
+                                <span>Video Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>300+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.9/5</h3>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Portfolio</h2>
+                <p>Explore my latest creative works</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="banners">Banners</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+                <button class="filter-btn" data-filter="thumbnails">Thumbnails</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Logo Designs -->
+                <div class="portfolio-item" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23FF6B6B' width='400' height='300'/%3E%3Ccircle cx='200' cy='150' r='80' fill='%23FFE66D' opacity='0.8'/%3E%3Ctext x='200' y='170' font-size='40' font-weight='bold' text-anchor='middle' fill='%23333'%3ELogo%3C/text%3E%3C/svg%3E" alt="Logo Design 1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Modern Brand Logo</h3>
+                    <p>Creative logo design for tech startup</p>
+                </div>
+
+                <div class="portfolio-item" data-category="logos">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%234ECDC4' width='400' height='300'/%3E%3Ctext x='200' y='150' font-size='50' font-weight='bold' text-anchor='middle' fill='%23fff'%3EBT%3C/text%3E%3C/svg%3E" alt="Logo Design 2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Business Logo</h3>
+                    <p>Professional brand identity</p>
+                </div>
+
+                <!-- Banner Designs -->
+                <div class="portfolio-item" data-category="banners">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Crect fill='%2395E1D3' width='800' height='300'/%3E%3Ctext x='400' y='150' font-size='48' font-weight='bold' text-anchor='middle' fill='%23333'%3ESummer Sale Banner%3C/text%3E%3C/svg%3E" alt="Banner Design 1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Summer Sale Banner</h3>
+                    <p>Social media promotional banner</p>
+                </div>
+
+                <div class="portfolio-item" data-category="banners">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Crect fill='%23F38181' width='800' height='300'/%3E%3Ctext x='400' y='150' font-size='48' font-weight='bold' text-anchor='middle' fill='%23fff'%3ENew Collection%3C/text%3E%3C/svg%3E" alt="Banner Design 2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Fashion Banner</h3>
+                    <p>E-commerce website banner</p>
+                </div>
+
+                <!-- Poster Designs -->
+                <div class="portfolio-item" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Crect fill='%23A8E6CF' width='400' height='600'/%3E%3Ctext x='200' y='300' font-size='48' font-weight='bold' text-anchor='middle' fill='%23333'%3EEvent Poster%3C/text%3E%3C/svg%3E" alt="Poster Design 1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Concert Event Poster</h3>
+                    <p>Modern event promotion poster</p>
+                </div>
+
+                <div class="portfolio-item" data-category="posters">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Crect fill='%23FFD3B6' width='400' height='600'/%3E%3Ctext x='200' y='300' font-size='48' font-weight='bold' text-anchor='middle' fill='%23333'%3EWorkshop%3C/text%3E%3C/svg%3E" alt="Poster Design 2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>Workshop Poster</h3>
+                    <p>Educational event design</p>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="portfolio-item" data-category="thumbnails">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'%3E%3Crect fill='%23FF6B9D' width='1280' height='720'/%3E%3Ctext x='640' y='360' font-size='72' font-weight='bold' text-anchor='middle' fill='%23fff'%3EYouTube%3C/text%3E%3C/svg%3E" alt="Thumbnail 1">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>YouTube Thumbnail 1</h3>
+                    <p>Eye-catching video thumbnail</p>
+                </div>
+
+                <div class="portfolio-item" data-category="thumbnails">
+                    <div class="portfolio-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'%3E%3Crect fill='%23C44569' width='1280' height='720'/%3E%3Ctext x='640' y='360' font-size='72' font-weight='bold' text-anchor='middle' fill='%23fff'%3EThumbnail%3C/text%3E%3C/svg%3E" alt="Thumbnail 2">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="view-btn">View Project</a>
+                        </div>
+                    </div>
+                    <h3>YouTube Thumbnail 2</h3>
+                    <p>Engaging thumbnail design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Services</h2>
+                <p>What I can create for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Professional logo design that represents your brand identity and values</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Design</li>
+                        <li><i class="fas fa-check"></i> Multiple Concepts</li>
+                        <li><i class="fas fa-check"></i> Revisions Included</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Social Media Kit</h3>
+                    <p>Complete social media design package including posts, stories, and graphics</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Posts & Stories</li>
+                        <li><i class="fas fa-check"></i> Templates</li>
+                        <li><i class="fas fa-check"></i> Brand Consistency</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>Poster Design</h3>
+                    <p>Eye-catching poster designs for events, promotions, and announcements</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Layout</li>
+                        <li><i class="fas fa-check"></i> High Resolution</li>
+                        <li><i class="fas fa-check"></i> Print Ready</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3>YouTube Thumbnails</h3>
+                    <p>Compelling thumbnail designs to boost your YouTube video views and engagement</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Design</li>
+                        <li><i class="fas fa-check"></i> High Impact</li>
+                        <li><i class="fas fa-check"></i> Quick Turnaround</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Banner Design</h3>
+                    <p>Professional banners for websites, social media, and marketing campaigns</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> SEO Optimized</li>
+                        <li><i class="fas fa-check"></i> Multiple Sizes</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Custom Designs</h3>
+                    <p>Any custom graphic design project tailored to your specific needs</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Flexible</li>
+                        <li><i class="fas fa-check"></i> Professional</li>
+                        <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                    </ul>
+                    <p class="service-price">Contact for Quote</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What my clients are saying</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Absolutely fantastic work! The designer understood my vision perfectly and delivered designs that exceeded my expectations. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>JD</span>
+                        </div>
+                        <div>
+                            <h4>John Davis</h4>
+                            <p>Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, creative, and responsive. The designer delivered everything on time with excellent quality. Perfect for our brand identity project!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>SM</span>
+                        </div>
+                        <div>
+                            <h4>Sarah Martinez</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Great communication and amazing design skills. The YouTube thumbnails significantly improved our video engagement. Will definitely hire again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>MC</span>
+                        </div>
+                        <div>
+                            <h4>Mike Chen</h4>
+                            <p>YouTuber</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding design work! The attention to detail and creativity are unmatched. Our new branding looks premium and professional. Highly impressed!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span>EW</span>
+                        </div>
+                        <div>
+                            <h4>Emma Wilson</h4>
+                            <p>E-commerce Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p>Get in touch and let's create something amazing</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Project Title" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@example.com">contact@designstudio.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>New York, USA</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="socials">
+                            <a href="#" class="social-icon" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Fiverr">
+                                <i class="fab fa-fiverr"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Upwork">
+                                <i class="fab fa-upwork"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Creative Designer. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> by DesignStudio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
